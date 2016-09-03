@@ -8,7 +8,7 @@
  * show()可接受一个参数对象，color、background和timeout，颜色允许css所有颜色表示法，timeout为淡入淡出的动画时长，单位秒
  * hide()只接受一个参数timeout
  * 
- * 默认情况下，背景颜色为rgba(0,0,0.2)，loading小圆圈颜色为#f36，默认动画时长0.5s
+ * 默认情况下，背景颜色为rgba(0,0,0.2)，loading小圆圈颜色为#666，默认动画时长1s
  * 
  */
 ;(function(doc,win,undefined){
@@ -16,7 +16,7 @@
 	var loading = doc.createElement("section");
 	//默认配置
 	var defaultSetting = {
-		color		:	"#f36",
+		color		:	"#666",
 		background	:	"rgba(0,0,0,.2)",
 		timeout		:	1
 	}
