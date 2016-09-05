@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 提供一个全局对象H5_loading
  * 
  * 该对象提供两个方法：
@@ -83,7 +83,7 @@
 			loading.style.msAnimation = fadeOut;
 			setTimeout(function(){
 				loading.style.display = "none";
-			},timeout*1000);
+			},timeout*500);
 			
 		}
 	};
