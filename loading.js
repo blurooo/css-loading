@@ -18,7 +18,8 @@
 	var defaultSetting = {
 		color		:	"#666",
 		background	:	"rgba(0,0,0,.2)",
-		timeout		:	1
+		timeout		:	1,
+		scale		:	1
 	}
 	
 	var fadeIn = "fadeIn "+ defaultSetting.timeout +"s forwards";
@@ -60,6 +61,9 @@
 				}
 				if(option.timeout){
 					fadeIn = "fadeIn "+ option.timeout +"s forwards";
+				}
+				if(option.scale && (typeof option.scale) == "number"){
+					loading_process.style.transform = "scale("+ option.scale +","+ option.scale +")";
 				}
 			}
 			loading.style.animation = fadeIn;
